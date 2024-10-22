@@ -69,7 +69,7 @@ Metadata Storage: The store_pdf_metadata function inserts the processed metadata
 
 System Resource Logging: The log_system_metrics function logs the CPU and memory usage during the execution.
 
-PDF Ingestion: The ingest_pdfs function coordinates the entire process. It collects PDF files, processes them concurrently, stores metadata in MongoDB, and logs system metrics.
+PDF Ingestion: The ingest_pdfs function coordinates the entire process. It collects PDF files, processes them concurrently using parallel processing through threads, utilizing system resourecs, maximizing speed and efficency, stores metadata in MongoDB, and logs system metrics.
 
 Why TextRank was Chosen
 Based on the above comparisons, TextRank was chosen as the main summarization algorithm because:
